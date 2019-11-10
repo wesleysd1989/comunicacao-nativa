@@ -9,9 +9,10 @@
 }
 RCT_EXPORT_MODULE()
 
-RCT_EXPORT_METHOD(checkBridge)
+RCT_EXPORT_METHOD(checkBridge:(RCTPromiseResolveBlock)resolve
+                 rejecter:(RCTPromiseRejectBlock)reject)
 {
-  NSLog(@"modulo nativo");
+  resolve(@"modulo nativo");
 }
 
 @end
