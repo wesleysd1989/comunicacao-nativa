@@ -1,5 +1,6 @@
 
 #import "RNComunicacaoNativa.h"
+#import <React/RTCLog.h>
 
 @implementation RNComunicacaoNativa
 
@@ -13,6 +14,11 @@ RCT_EXPORT_METHOD(checkBridge:(RCTPromiseResolveBlock)resolve
                  rejecter:(RCTPromiseRejectBlock)reject)
 {
   resolve(@"modulo nativo ios");
+}
+
+RCT_EXPORT_METHOD(addMsg:(NSString *)ola mundo(NSString *)mundo)
+{
+  RTCLogInfo(@"um teste de %@ %@", ola, mundo);
 }
 
 @end
