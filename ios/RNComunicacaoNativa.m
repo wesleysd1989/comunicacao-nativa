@@ -18,7 +18,7 @@ RCT_EXPORT_METHOD(checkBridge:(RCTPromiseResolveBlock)resolve
 
 RCT_EXPORT_METHOD(addMsg:(NSString *)ola mundo:(NSString *)mundo)
 {
-  RTCLogInfo(@"um teste de %@ %@", ola, mundo);
+  RCTLogInfo(@"um teste de %@ %@", ola, mundo);
 }
 
 @end
