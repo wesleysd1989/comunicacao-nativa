@@ -22,6 +22,6 @@ public class RNComunicacaoNativaModule extends ReactContextBaseJavaModule {
   }
   @ReactMethod
   public void checkBridge(Promise promise) {
-    promise.resolve("modulo funciona");
+    promise.resolve("modulo nativo android");
   }
 }
