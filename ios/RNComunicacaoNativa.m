@@ -1,6 +1,6 @@
 
 #import "RNComunicacaoNativa.h"
-#import "React/RTCLog.h"
+#import "RTCLog.h"
 
 @implementation RNComunicacaoNativa
 
