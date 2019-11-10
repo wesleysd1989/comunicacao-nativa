@@ -9,14 +9,10 @@
 }
 RCT_EXPORT_MODULE()
 
-RCT_EXPORT_METHOD(test, checkBridge:(RCTPromiseResolveBlock)resolve
+RCT_EXPORT_METHOD(checkBridge:(RCTPromiseResolveBlock)resolve
                  rejecter:(RCTPromiseRejectBlock)reject)
 {
-  if(test){
-    resolve(test);
-  }else {
-    reject(@"no_test", @"isso e so um test", error)
-  }
+  resolve(@"modulo nativo ios");
 }
 
 @end
